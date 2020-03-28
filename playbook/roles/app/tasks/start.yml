@@ -1,0 +1,17 @@
+# start app.
+- name: start app
+  command: supervisorctl {{item}} app
+  loop:
+    - update
+    - start
+  tags:
+    - start
+
+# start nginx.
+- name: start nginx
+  command: supervisorctl {{item}} nginx
+  loop:
+    - update
+    - start
+  tags:
+    - start
