@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   app:
-    image: sloopstash/ansible:v1
+    image: learning/ansible:v1
     command: "/usr/bin/supervisord -c /etc/supervisord.conf"
     hostname: crm-app
     ports:
@@ -15,7 +15,7 @@ services:
     networks:
       - ansible-net
   redis:
-    image: sloopstash/ansible:v1
+    image: learning/ansible:v1
     command: "/usr/bin/supervisord -c /etc/supervisord.conf"
     hostname: crm-redis
     ports:
