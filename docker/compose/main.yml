@@ -27,5 +27,5 @@ services:
       - ansible-net
 networks:
   ansible-net:
-    external:
-      name: ansible-net
+    name: ansible-net
+    external: true
