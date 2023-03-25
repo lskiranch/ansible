@@ -1,7 +1,7 @@
 # Role variables.
 app:
   environment: dev
-  repo_url: https://github.com/lskiranch/kickstart-flask
+  repo_url: https://github.com/lskiranch/flask
   deploy_dir: /opt/app
   redis:
     host: redis
